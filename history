@@ -1,0 +1,33 @@
+ history
+    2  yum install git -y
+    3  whoami
+    4  hostname
+    5  mkdir devops_basic
+    6  cd devops_basic
+    7  touch linux.txt
+    8  vim linux.txt
+    9  ll
+   10  chmod u+x linux.txt
+   11  chmod g+x linux.txt
+   12  chmod o+x linux.txt
+   13  ls -l
+   14  sudo yum update -y
+   15  sudo yum install git tree wget -y
+   16  git -v
+   17  tree --version
+   18  top
+   19  free -h
+   20  df -h
+   21  uptime
+   22  pwd
+   23  cd /
+   24  cd ~
+   25  git init
+   26  git add .
+   27  git commit -m "first commit"
+   28   git config --global  user.name"alishehzad943"
+   29   git config --global  user.email"princealishehzad943@gmail.com"
+   30  git branch -M main
+   31  git remote add origin https://github.com/alishehzad-943/rhombixtechnologies_tasks.git
+   32  git push -u origin main
+   33  history
