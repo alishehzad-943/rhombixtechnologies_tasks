@@ -1,0 +1,15 @@
+
+    1  clear
+    2  vim jenkins.sh
+    3  sh jenkins.sh
+    4  df -h
+    5  sudo fallocate -l 512M /swapfile
+    6  sudo chmod 600 /swapfile
+    7  sudo mkswap /swapfile
+    8  sudo swapon /swapfile
+    9  sudo swapon --show
+   10  free -h
+   11  sudo systemctl restart jenkins
+   12  cd /var/lib/jenkins/workspace/task2
+   13  ll
+   14  history
