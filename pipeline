@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('CHECK CODE') {
+            steps {
+                git branch: 'main', url: 'https://github.com/alishehzad-943/rhombixtechnologies_tasks'
+                echo '✅ Code fetched successfully from GitHub repository.'
+            }
+        }
+    }
+}
