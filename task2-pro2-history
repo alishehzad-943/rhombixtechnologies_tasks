@@ -1,0 +1,31 @@
+ 1  clear
+    2  vim jenkins.sh
+    3  sh jenkins.sh
+    4  df -h
+    5  sudo fallocate -l 512M /swapfile
+    6  sudo chmod 600 /swapfile
+    7  sudo mkswap /swapfile
+    8  sudo swapon /swapfile
+    9  sudo swapon --show
+   10  free -h
+   11  sudo systemctl restart jenkins
+   12  cd /var/lib/jenkins/workspace/task2
+   13  ll
+   14  history
+   15  clear
+   16  yum install -y docker
+   17  cd
+   18  cd task2
+   19  vim index.html
+   20  vim Dockerfile
+   21  docker build -t social-login-app .
+   22  sudo systemctl start docker
+   23  docker build -t social-login-app .
+   24  sudo docker run -d -p 8080:80 --name socialweb social-login-app
+   25  sudo docker run -d -p 8081:80 --name socialweb social-login-app
+   26  sudo docker run -d -p 8081:80 --name cont1 social-login-app
+   27  sudo docker ps
+   28  sudo docker login
+   29  sudo docker tag social-login-app alishehzad943/social-login-app:v1
+   30  sudo docker push alishehzad943/social-login-app:v1
+   31  history
